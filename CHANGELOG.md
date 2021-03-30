@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v1.0.0-dev.1
+--
+
+* Breaking: migrate to Dart 2.12.0 with null safety enabled
+* Supporting Unix socket connections.
+
 v0.18.0
 --
 
