@@ -219,7 +219,6 @@ class BinaryDataPacket extends ResultRow {
         var value = buffer.readLengthCodedString();
         log.fine('Value: $value');
         return value;
-        break;
       case FIELD_TYPE_NEWDATE:
       case FIELD_TYPE_DECIMAL:
       //TODO pre 5.0.3 will return old decimal values

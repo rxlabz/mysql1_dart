@@ -35,7 +35,7 @@ class ExecuteQueryHandler extends Handler {
   StreamController<ResultRow>? _streamController;
 
   final PreparedQuery? _preparedQuery;
-  final List _values;
+  final List<Object?> _values;
   List? preparedValues;
   late OkPacket _okPacket;
   final bool _executed;
@@ -52,7 +52,7 @@ class ExecuteQueryHandler extends Handler {
     var nullMap = createNullMap();
     preparedValues = List.filled(_values.length, null);
     for (var i = 0; i < _values.length; i++) {
-      Object value = _values[i];
+      final value = _values[i];
       var parameterType = _getType(value);
       types[i * 2] = parameterType;
       types[i * 2 + 1] = 0;
@@ -111,7 +111,7 @@ class ExecuteQueryHandler extends Handler {
     return 0;
   }
 
-  int _getType(Object value) {
+  int _getType(Object? value) {
     if (value == null) {
       return FIELD_TYPE_NULL;
     }

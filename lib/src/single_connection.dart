@@ -157,7 +157,7 @@ class MySqlConnection {
   /// Run [sql] query on the database using [values] as positional sql parameters.
   ///
   /// eg. ```query('SELECT FROM users WHERE id = ?', [userId])```.
-  Future<Results> query(String sql, [List<Object>? values]) async {
+  Future<Results> query(String sql, [List<Object?>? values]) async {
     if (values == null || values.isEmpty) {
       return _conn.processHandlerWithResults(QueryStreamHandler(sql), _timeout);
     }
@@ -170,7 +170,7 @@ class MySqlConnection {
   /// e.g. ```queryMulti('INSERT INTO USERS (name) VALUES (?)', ['Adam', 'Eve'])```.
   Future<List<Results>> queryMulti(
     String sql,
-    Iterable<List<Object>> values,
+    Iterable<List<Object?>> values,
   ) async {
     PreparedQuery? prepared;
     var ret = <Results>[];

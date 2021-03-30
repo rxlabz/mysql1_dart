@@ -5,8 +5,8 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:logging/logging.dart';
 
-import '../constants.dart';
 import '../buffer.dart';
+import '../constants.dart';
 import '../handlers/handler.dart';
 
 class AuthHandler extends Handler {

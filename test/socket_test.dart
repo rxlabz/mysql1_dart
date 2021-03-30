@@ -11,8 +11,6 @@ import 'package:mysql1/src/buffered_socket.dart';
 import 'package:mysql1/src/single_connection.dart';
 import 'package:test/test.dart';
 
-import 'unit/mock_socket.dart';
-
 class MockBufferedSocket extends Mock implements BufferedSocket {}
 
 class BufferFake extends Fake implements Buffer {}

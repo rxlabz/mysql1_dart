@@ -3,7 +3,6 @@ library mysql1.types_test;
 import 'dart:typed_data';
 
 import 'package:mysql1/src/blob.dart';
-
 import 'package:test/test.dart';
 
 void main() {

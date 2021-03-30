@@ -1,7 +1,6 @@
 library mysql1.buffer_test;
 
 import 'package:mysql1/src/buffer.dart';
-
 import 'package:test/test.dart';
 
 void main() {
