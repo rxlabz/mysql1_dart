@@ -1,7 +1,7 @@
 Changelog
 =========
 
-v1.0.0-dev.1
+v1.0.0-null-safety.0
 --
 
 * Breaking: migrate to Dart 2.12.0 with null safety enabled
