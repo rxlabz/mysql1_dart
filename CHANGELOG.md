@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v0.19.1
+--
+
+22 Apr 2021
+* Fix : nullable params in transactionContext.queryMulti
+
 v0.19.0
 --
 
